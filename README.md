@@ -2,12 +2,11 @@ Pet Clinic in MEAN stack!
 ===================
 Java has its own reference application to prove their concept to developers. MEAN doesn't have one but deserves it ! So why not creating the exact same one for MEAN ?
 In add, it could bring a fair comparison in easiness and performance between these two technologies.
-JEE proposes a Pet Store application, but Spring is certainly more popular and offers a pet clinic application. You can find it  there : https://github.com/spring-projects/spring-petclinic .
-And here it comes for MEAN. 
+JEE proposes a Pet Store application, but Spring is certainly more popular and offers a pet clinic application. You can find it  there : https://github.com/spring-projects/spring-petclinic.And here it comes for MEAN. 
 ----------
 
 
-Installation
+Requirements
 -------------
 
 I develop the application with MEAN stack composed of :
