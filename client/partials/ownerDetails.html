@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <div class="container xd-container">
+
+        <h2>Owner Information</h2>
+
+
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <td><b>{{owner.firstName}} {{owner.lastName}}</b></td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{owner.address}}</td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td>{{owner.city}}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{owner.telephone}}</td>
+            </tr>
+        </table>
+
+        <a href="#/editOwner/{{owner.id}}" class="btn btn-default">Edit Owner</a>
+
+        <a href="#/addPet/{{owner.id}}" class="btn btn-default">Add New Pet</a>
+
+        <br/>
+        <br/>
+        <br/>
+        <h2>Pets and Visits</h2>
+
+        <table class="table table-striped">
+            <tr ng-repeat="pet in owner.pets track by pet.name">
+                <td valign="top">
+                    <dl class="dl-horizontal">
+                        <dt>Name</dt>
+                        <dd>{{pet.name}}</dd>
+                        <dt>Birth Date</dt>
+                        <dd>{{pet.birthdate}}</dd>
+                        <dt>Type</dt>
+                        <dd>{{pet.type}}</dd>
+                    </dl>
+                </td>
+                <td valign="top">
+                    <table class="table-condensed">
+                        <thead>
+                            <tr>
+                                <th>Visit Date</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tr ng-repeat="visite in pet.visites track by visit.description">
+                            <td>{{visite.date}}</td>
+                            <td>{{visite.description}}</td>
+                        </tr>
+                        <tr>
+                            <tr>
+                                <td>
+                                    <a href="#/editPet/{{owner.id}}/{{pet.name}}">Edit Pet</a>
+                                </td>
+                                <td>
+                                    <a href="#/addVisit/{{owner.id}}/{{pet.name}}">Add Visit</a>
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+                </tr>
+
+
+        </table>
+
+
+
+        <br/>
+        <br/>
+    </div>
+</div>

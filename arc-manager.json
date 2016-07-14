@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "ManagerHost": 2,
+    "LoadBalancer": 1
+  },
+  "models": {
+    "ManagerHost": {
+      "523ebec9-9816-412f-80e7-b1c43e0030ab": "{\"id\":\"523ebec9-9816-412f-80e7-b1c43e0030ab\",\"host\":\"localhost\",\"port\":9080,\"actions\":[],\"protocol\":\"http\",\"created\":1453735071889}"
+    },
+    "LoadBalancer": {}
+  }
+}

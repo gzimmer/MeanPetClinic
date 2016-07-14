@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="container xd-container">
+
+    <h2>Veterinarians</h2>
+
+    <table id="vets" class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Specialties</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="vet in vets track by vet.lastName">
+          <td>{{vet.firstName}} {{vet.lastName}}</td>
+          <td>{{vet.specialties}}</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table-buttons">
+      <tr>
+        <td>
+          <a href="/api/veterinarians/petclinic/vets.xml">View as XML</a>
+        </td>
+        <td>
+          <a href="/api/veterinarians/petclinic/vets.atom">Subscribe to Atom feed</a>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+</div>

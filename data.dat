@@ -1,0 +1,199 @@
+db.owner.drop();
+var a=
+{
+  "pets": [
+    {
+      "name": "Basil",
+      "birthdate": "06082012",
+      "type": "hamster",
+      "visites": [{"date":"10022014","description":"Petit problème"}]
+    }
+  ],
+  "firstName": "Betty",
+  "lastName": "Davis",
+  "address": "638 Cardinal Ave.",
+  "city": "Sun Prairie",
+  "telephone": "6085551749"
+};
+var b=
+{
+  "pets": [
+    {
+      "name": "Lucky",
+      "birthdate": "24062010",
+      "type": "dog"
+    },
+ {
+      "name": "Sly",
+      "birthdate": "08062012",
+      "type": "cat"
+    }
+  ],
+  "firstName": "Carlos",
+  "lastName": "Estaban",
+  "address": "2335 Independence La.",
+  "city": "Waunakee",
+  "telephone": "6085555487"
+};
+
+var c=
+{
+  "pets": [
+    {
+      "name": "Freddy",
+      "birthdate": "09032010",
+      "type": "bird"
+    }
+  ],
+  "firstName": "David",
+  "lastName": "Schroeder",
+  "address": "2749 Blackhawk Trail",
+  "city": "Madison",
+  "telephone": "6085559435"
+};
+
+var d=
+{
+  "pets": [
+    {
+      "name": "Jewel",
+      "birthdate": "07032010",
+      "type": "dog"
+    },
+ {
+      "name": "Rosy",
+      "birthdate": "17042011",
+      "type": "dog"
+    }
+  ],
+  "firstName": "Eduardo",
+  "lastName": "Rodriquez",
+  "address": "2693 Commerce St.",
+  "city": "McFarland",
+  "telephone": "6085558763"
+};
+
+
+var e=
+{
+  "pets": [
+    {
+      "name": "Leo",
+      "birthdate": "07092010",
+      "type": "cat"
+    }
+  ],
+  "firstName": "George",
+  "lastName": "Franklin",
+  "address": "110 W. Liberty St.",
+  "city": "Madison",
+  "telephone": "6085551023"
+};
+
+var f=
+{
+  "pets": [
+    {
+      "name": "Iggy",
+      "birthdate": "30112010",
+      "type": "lizard"
+    }
+  ],
+  "firstName": "Harold",
+  "lastName": "Davis",
+  "address": "563 Friendly St.",
+  "city": "Windsor",
+  "telephone": "6085553198"
+};
+
+var g=
+{
+  "pets": [
+    {
+      "name": "Max",
+      "birthdate": "04092012",
+      "type": "cat"
+    },
+ {
+      "name": "Samantha",
+      "birthdate": "04092012",
+      "type": "cat"
+    }
+  ],
+  "firstName": "Jean",
+  "lastName": "Coleman",
+  "address": "105 N. Lake St.",
+  "city": "Monona",
+  "telephone": "6085552654"
+};
+
+
+var h=
+{
+  "pets": [
+    {
+      "name": "Lucky",
+      "birthdate": "06082011",
+      "type": "bird"
+    }
+  ],
+  "firstName": "Jeff",
+  "lastName": "Black",
+  "address": "1450 Oak Blvd.",
+  "city": "Monona",
+  "telephone": "6085555387"
+};
+
+var i=
+{
+  "pets": [
+    {
+      "name": "Mulligan",
+      "birthdate": "24022007",
+      "type": "dog"
+    }
+  ],
+  "firstName": "Maria",
+  "lastName": "Escobito",
+  "address": "345 Maple St.",
+  "city": "Madison",
+  "telephone": "6085557683"
+};
+
+var j=
+{
+  "pets": [
+    {
+      "name": "George",
+      "birthdate": "20012010",
+      "type": "snake"
+    }
+  ],
+  "firstName": "Peter",
+  "lastName": "McTavish",
+  "address": "2387 S. Fair Way",
+  "city": "Madison",
+  "telephone": "6085552765"
+};
+
+
+
+db.owner.insert([a,b,c,d,e,f,g,h,i,j]);
+db.veterinarian.drop();
+db.veterinarian.insert([
+{firstName :'James', lastName: 'Carter', specialties:	'none'},
+{firstName :'Linda', lastName: 'Douglas', specialties:	'dentistry surgery'},
+{firstName :'Sharon', lastName:'Jenkins', specialties:	'none'},
+{firstName :'Helen', lastName: 'Leary', specialties:	'radiology'},
+{firstName :'Rafael', lastName: 'Ortega', specialties:	'surgery'},
+{firstName :'Henry', lastName: 'Stevens', specialties:	'radiology'}
+]);
+db.type.drop();
+db.type.insert ([
+{ "name" : "bird" },
+{ "name" : "cat" },
+{ "name" : "dog" },
+{ "name" : "hamster"},
+{ "name" : "lizard" },
+{ "name" : "snake" }
+]);

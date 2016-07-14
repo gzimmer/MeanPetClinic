@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="container xd-container">
+
+        <h2>Owners</h2>
+        <div ng-controller="ownersListController">
+              <table id="owners" class="table table-striped">
+
+                <thead>
+                    <tr>
+                        <th style="width: 150px;">Name</th>
+                        <th style="width: 200px;">Address</th>
+                        <th>City</th>
+                        <th>Telephone</th>
+                        <th style="width: 100px;">Pets</th>
+                    </tr>
+                </thead>
+
+                <tr ng-repeat="owner in owners track by owner.id">
+                    <td><a ng-click="getOwnerById(owner.id)">{{owner.firstName}} {{owner.lastName}}</a></td>
+                    <td>{{owner.address}}.</td>
+                    <td>{{owner.city}}</td>
+                    <td>{{owner.telephone}}</td>
+                    <td>{{renderPets(owner.pets)}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    setTimeout(function() {
+        var datatable = $('#owners').DataTable();
+/*        new $.fn.dataTable.Buttons(datatable, {
+            buttons: ['pdf']
+        });
+        var pdf = $('#pdf', datatable.table().container());
+        datatable.buttons().container().appendTo(pdf);*/
+    }, 0);
+</script>
